@@ -11,7 +11,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Analytics } from "@vercel/analytics/react"
+import { AnalyticsFromVercel } from "@vercel/analytics/react"
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -67,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <SpeedInsights />
+      <AnalyticsFromVercel />
       <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png" />
