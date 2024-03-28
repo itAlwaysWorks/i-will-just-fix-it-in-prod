@@ -1,0 +1,82 @@
+---
+title: Big shout to Next.js as my blog deployed on Vercel
+date: '2024-03-28'
+tags: ['next-js', 'tailwind']
+draft: false
+summary: How to deploy my blog on Vercel
+---
+
+## Quick Start
+
+1. Clone the repo
+
+```
+#npx
+npx degit 'timlrx/tailwind-nextjs-starter-blog'
+
+#git
+git clone https://github.com/timlrx/tailwind-nextjs-starter-blog.git
+
+
+```
+
+2. Personalize `siteMetadata.js` (site related information)
+3. Modify the content security policy in `next.config.js` if you want to use
+   other analytics provider or a commenting solution other than giscus.
+4. Personalize `authors/default.md`
+5. Modify `projectsData.ts`
+6. Modify `headerNavLinks.ts` to customize navigation links
+7. Add blog posts
+8. Deploy on Vercel
+
+## Installation
+
+```bash
+yarn
+```
+
+
+> Note: may need to run on Command Prompt on Windows.
+
+
+```bash
+set PWD="$(pwd)"
+```
+
+## Development
+
+First, run the development server:
+
+```bash
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Edit the layout in `app` or content in `data`. With live reloading, the pages auto-updates as you edit them.
+
+## Extend / Customize
+
+`data/siteMetadata.js` - contains most of the site related information which should be modified for a user's need.
+
+`data/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
+
+`data/projectsData.js` - data used to generate styled card on the projects page.
+
+`data/headerNavLinks.js` - navigation links.
+
+`data/logo.svg` - replace with your own logo.
+
+`data/blog` - replace with your own blog posts.
+
+`public/static` - store assets such as images and favicons.
+
+
+## Deploy
+
+**Vercel**  
+Deploy on [Vercel](https://vercel.com). Please check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Licence
+
+[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/main/LICENSE) © [Timothy Lin](https://www.timlrx.com)
