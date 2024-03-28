@@ -24,7 +24,9 @@ module.exports = {
   rules: {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',{endOfLine: 'auto'}
+      ],
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
